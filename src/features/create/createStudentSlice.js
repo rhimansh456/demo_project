@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const addStudent = createAsyncThunk('student/addStudent', async (data) => {
-    const response = await axios.post('http://localhost:8081/students', {
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}students`, {
         rollno: data.rollno,
         name: data.name,
         course: data.course,

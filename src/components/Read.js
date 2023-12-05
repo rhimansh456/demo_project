@@ -12,7 +12,7 @@ function Read() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8081/read/` + id)
+            .get(`${process.env.REACT_APP_API_URL}read/` + id)
             .then((res) => {
                 setStudent(res.data[0]);
             })

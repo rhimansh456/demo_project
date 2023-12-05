@@ -135,7 +135,7 @@ function Listing() {
     const handleDelete = (id) => {
         const confirmed = window.confirm('Are You Sure You Want to Delete This File?');
         if (confirmed) {
-            axios.delete(`http://localhost:8081/delete/` + id)
+            axios.delete(`${process.env.REACT_APP_API_URL}delete/` + id)
                 .then(res => {
                     /* eslint-disable no-restricted-globals */
                     // Your code that uses `location`

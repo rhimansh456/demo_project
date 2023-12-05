@@ -38,7 +38,7 @@ function Dashboard() {
 
 
     useEffect(() => {
-        axios.get('http://localhost:8081/')
+        axios.get(`${process.env.REACT_APP_API_URL}`)
             .then(res => setData(res.data))
             .catch(err => console.log(err));
     }, []);
