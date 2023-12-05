@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+.container-fluid {
+  background-color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.H1 {
+  font-family: 'Kenia', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.create-form {
+  width: 600px !important;
+  height: 85vh;
   display: flex;
+  background-color: aliceblue;
   flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  border: 1px solid rgb(191, 187, 187);
+  border-radius: 5px;
+  row-gap: 2px;
+  box-shadow: 1px 1px 40px lightblue;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.form-contain {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.read-card {
+  width: 800px;
+  background-color: rgb(234, 229, 229) !important;
+  margin-top: 110px;
+  /* margin-left: 250px; */
+  box-shadow: 1px 1px 40px lightblue !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.read-card-text {
+  text-align: start;
+  column-gap: 50px;
+}
+
+.signup-form {
+  margin-top: 20px;
+  width: 500px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%); */
+  /* box-shadow: -1px -1px 20px linear-gradient(to top, #f43b47 0%, #453a94 100%); */
+  margin-right: 20px;
+  /* border-radius: 10px; */
+
+}
+
+.file-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fo-rm {
+  background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  filter: blur(0px);
+  display: flex;
+  flex-direction: column;
+}
+
+.fo-rm:hover {
+  filter: blur(0px);
+}
+
+.content-style {
+  margin-top: 20px;
+  /* margin-right: 160px; */
+  height: 85vh;
+  width: 700px;
+  background-image: url('https://t3.ftcdn.net/jpg/03/70/92/84/360_F_370928450_R6g8c0j5cey86PUXE32W7KMiqIUe1fOI.jpg');
+  background-color: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  /* border-radius: 30px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.signup-form:hover {
+  border-radius: 5px;
+  color: aliceblue;
+  transition: 1s;
+}
+.content-style-1 {
+  margin-top: 20px;
+  /* margin-right: 160px; */
+  height: 85vh;
+  width: 700px;
+  background-image: url('https://t3.ftcdn.net/jpg/04/45/30/00/360_F_445300032_8BOeLM2RyS8hFgjPgZ8OMPXUelRCySun.jpg');
+  background-color: linear-gradient(to top, #6991c7 1%, #feada6 100%), linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  /* border-radius: 30px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+body {
+  text-align: left; /* LTR default */
+}
+
+body[dir='rtl'] {
+  text-align: right;
+}
+.spin {
+  width: 100vw;
+  height: 100vh;
+  background-color: linear-gradient(to top, #6991c7 1%, #feada6 100%), linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
