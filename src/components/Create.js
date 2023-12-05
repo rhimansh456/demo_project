@@ -19,7 +19,7 @@ export default function Create() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(`http://localhost:8081/students`, values)
+        axios.post(`${process.env.REACT_APP_API_URL}students`, values)
             .then(res => {
                 console.log(res);
                 navigate('/leftsidebar/home')

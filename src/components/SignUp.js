@@ -26,7 +26,7 @@ function SignupForm() {
         }
 
         try {
-            const response = await axios.post('http://localhost:8081/signup', signupData);
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}signup`, signupData);
             console.log(response.data);
             setRegistrationStatus(true)
             setTimeout(() => {

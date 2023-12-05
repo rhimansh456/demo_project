@@ -11,7 +11,7 @@ function Update() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:8081/read/` + id)
+        axios.get(`${process.env.REACT_APP_API_URL}read/` + id)
             .then(res => {
                 console.log(res)
                 setValues({
@@ -34,7 +34,7 @@ function Update() {
 
     const handleUpdate = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:8081/update/` + id, values)
+        axios.put(`${process.env.REACT_APP_API_URL}update/` + id, values)
             .then(res => {
                 console.log(res)
                 navigate('/leftsidebar/home')
